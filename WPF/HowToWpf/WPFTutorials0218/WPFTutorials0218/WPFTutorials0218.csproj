@@ -55,6 +55,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Inputs\KeyBoardInput.xaml.cs">
+      <DependentUpon>KeyBoardInput.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Inputs\MouseInput.xaml.cs">
+      <DependentUpon>MouseInput.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Inputs\MultiTouchInput.xaml.cs">
+      <DependentUpon>MultiTouchInput.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Inputs\Routedcommands.xaml.cs">
+      <DependentUpon>Routedcommands.xaml</DependentUpon>
+    </Compile>
     <Compile Include="NestingofLayout\Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
@@ -75,6 +87,22 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DependencyProperties\Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Inputs\KeyBoardInput.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Inputs\MouseInput.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Inputs\MultiTouchInput.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Inputs\Routedcommands.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -146,6 +174,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Inputs\Images\DSC_0076.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
