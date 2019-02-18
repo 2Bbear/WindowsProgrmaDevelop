@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\GitHub\WindowsProgrmaDevelop\UsingMvvmPrismLibrary\WpfAuth\WpfAuth\obj\Debug\
+C:\GitHub\WindowsProgrmaDevelop\WPF\UsingMvvmPrismLibrary\WpfAuth\WpfAuth\obj\Debug\
 WpfAuth
 none
 false
 DEBUG;TRACE
-C:\GitHub\WindowsProgrmaDevelop\UsingMvvmPrismLibrary\WpfAuth\WpfAuth\App.xaml
+C:\GitHub\WindowsProgrmaDevelop\WPF\UsingMvvmPrismLibrary\WpfAuth\WpfAuth\App.xaml
 4-1209180412
 
 35-1414440196
-77-535803356
+77-996572168
 MainWindow.xaml;View\AddUserView.xaml;View\LoginCheck.xaml;View\LoginWindow.xaml;
 
 True
