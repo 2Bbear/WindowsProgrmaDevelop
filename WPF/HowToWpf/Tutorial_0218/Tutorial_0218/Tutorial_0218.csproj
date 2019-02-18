@@ -82,6 +82,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MarkupExtensions\MarkupWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MarkupExtensions\MarkupWindow2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MyStackpanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -92,6 +100,12 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MarkupExtensions\MarkupWindow.xaml.cs">
+      <DependentUpon>MarkupWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MarkupExtensions\MarkupWindow2.xaml.cs">
+      <DependentUpon>MarkupWindow2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MyStackpanel.xaml.cs">
       <DependentUpon>MyStackpanel.xaml</DependentUpon>
     </Compile>
