@@ -1,0 +1,17 @@
+﻿<Window x:Class="Tutorial_0218.MyStackpanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tutorial_0218"
+        mc:Ignorable="d"
+        Title="MyStackpanel" Height="450" Width="800">
+ 
+    <StackPanel Orientation="Horizontal">
+        <TextBlock Text = "Welcome to XAML Tutorial" Height = "20" Width = "200" Margin = "5"/>
+        <Button Content="Ok" Height="20" Width="60" Margin="5"/>
+        <Button Content="Button" Height="47" Margin="0,265,0,0" VerticalAlignment="Top" Width="156"/>
+
+    </StackPanel>
+   
+</Window>
