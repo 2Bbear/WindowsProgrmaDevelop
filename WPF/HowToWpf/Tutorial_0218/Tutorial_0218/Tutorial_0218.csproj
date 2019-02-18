@@ -57,8 +57,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="HowToDebuging\Employee.cs" />
+    <Compile Include="HowToDebuging\Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="XAMLResources\Mainwindow.xaml.cs">
       <DependentUpon>Mainwindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XAMLStyles\Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
     <Compile Include="XAMLTemplates\DataTemplate.xaml.cs">
       <DependentUpon>DataTemplate.xaml</DependentUpon>
@@ -66,6 +73,15 @@
     <Compile Include="XAMLTemplates\Employee.cs" />
     <Compile Include="XAMLTemplates\Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XAMLTrigger\DataTrigger.xaml.cs">
+      <DependentUpon>DataTrigger.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XAMLTrigger\EventTrigger.xaml.cs">
+      <DependentUpon>EventTrigger.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XAMLTrigger\PropertyTriggers.xaml.cs">
+      <DependentUpon>PropertyTriggers.xaml</DependentUpon>
     </Compile>
     <Page Include="DataBindingOneWay\Databinding_OneWay.xaml">
       <SubType>Designer</SubType>
@@ -84,6 +100,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DependencyProperties\UserControl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HowToDebuging\Window1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -139,11 +159,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="XAMLStyles\Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="XAMLTemplates\DataTemplate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="XAMLTemplates\Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="XAMLTrigger\DataTrigger.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="XAMLTrigger\EventTrigger.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="XAMLTrigger\PropertyTriggers.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

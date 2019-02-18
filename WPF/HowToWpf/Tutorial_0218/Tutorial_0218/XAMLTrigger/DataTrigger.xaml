@@ -1,0 +1,26 @@
+﻿<Window x:Class="Tutorial_0218.XAMLTrigger.DataTrigger"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tutorial_0218.XAMLTrigger"
+        mc:Ignorable="d"
+        Title="DataTrigger" Height="450" Width="800">
+    <StackPanel HorizontalAlignment = "Center">
+        <CheckBox x:Name = "redColorCheckBox" Content = "Set red as foreground color" Margin = "20"/>
+
+        <TextBlock Name = "txtblock" VerticalAlignment = "Center" Text="Event Trigger" FontSize = "24" Margin = "20">
+            <TextBlock.Style>
+                <Style>
+                    <Style.Triggers>
+                        <DataTrigger Binding = "{Binding ElementName = redColorCheckBox, Path = IsChecked}" Value = "true">
+                            <Setter Property = "TextBlock.Foreground" Value = "Red"/>
+                            <Setter Property = "TextBlock.Cursor" Value = "Hand" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+
+    </StackPanel>
+</Window>
