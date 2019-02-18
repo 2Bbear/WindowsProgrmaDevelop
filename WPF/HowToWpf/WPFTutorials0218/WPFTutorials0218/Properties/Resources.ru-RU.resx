@@ -118,24 +118,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Address" xml:space="preserve">
-    <value>Address</value>
+    <value>Адрес</value>
   </data>
   <data name="Age" xml:space="preserve">
-    <value>Age</value>
+    <value>Возраст</value>
   </data>
   <data name="Cancel_Button" xml:space="preserve">
-    <value>Cancel</value>
+    <value>отменить</value>
   </data>
   <data name="Help_Button" xml:space="preserve">
-    <value>Help</value>
+    <value>Помогите</value>
   </data>
   <data name="Name" xml:space="preserve">
-    <value>Name</value>
+    <value>название</value>
   </data>
   <data name="OK_Button" xml:space="preserve">
-    <value>OK</value>
+    <value>Хорошо</value>
   </data>
   <data name="Title" xml:space="preserve">
-    <value>Title</value>
+    <value>Тестовое задание</value>
   </data>
 </root>
