@@ -37,6 +37,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,11 +57,33 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="XAMLResources\Mainwindow.xaml.cs">
+      <DependentUpon>Mainwindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XAMLTemplates\DataTemplate.xaml.cs">
+      <DependentUpon>DataTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XAMLTemplates\Employee.cs" />
+    <Compile Include="XAMLTemplates\Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
     <Page Include="DataBindingOneWay\Databinding_OneWay.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DataBindingTwoWay\Databinding_TwoWay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DependencyProperties\DependencyPropertiesWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DependencyProperties\DependencyPropertiesWindow2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DependencyProperties\UserControl1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -78,6 +102,15 @@
     <Compile Include="DataBindingTwoWay\Databinding_TwoWay.xaml.cs">
       <DependentUpon>Databinding_TwoWay.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DependencyProperties\DependencyPropertiesWindow.xaml.cs">
+      <DependentUpon>DependencyPropertiesWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DependencyProperties\DependencyPropertiesWindow2.xaml.cs">
+      <DependentUpon>DependencyPropertiesWindow2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DependencyProperties\UserControl1.xaml.cs">
+      <DependentUpon>UserControl1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -95,6 +128,22 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MyStackpanel2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="XAMLResources\ResourceDictionaries\DictionaryWithBrush.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="XAMLResources\Mainwindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="XAMLTemplates\DataTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="XAMLTemplates\Window1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -137,5 +186,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

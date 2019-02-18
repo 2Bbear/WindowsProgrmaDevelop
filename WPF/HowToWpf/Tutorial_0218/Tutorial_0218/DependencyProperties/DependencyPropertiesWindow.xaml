@@ -1,0 +1,24 @@
+﻿<Window x:Class="Tutorial_0218.DependencyProperties.DependencyPropertiesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tutorial_0218.DependencyProperties"
+        mc:Ignorable="d"
+        Title="DependencyPropertiesWindow" Height="450" Width="800">
+    <Grid>
+        <Button Height = "40" Width = "175" Margin = "10" Content = "Dependency Property">
+
+            <Button.Style>
+                <Style TargetType = "{x:Type Button}">
+                    <Style.Triggers>
+                        <Trigger Property = "IsMouseOver" Value = "True">
+                            <Setter Property = "Foreground" Value = "Red" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+
+        </Button>
+    </Grid>
+</Window>
