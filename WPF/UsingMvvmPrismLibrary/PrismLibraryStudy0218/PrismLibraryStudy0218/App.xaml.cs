@@ -16,10 +16,12 @@ namespace PrismLibraryStudy0218
     {
         protected override void OnStartup(StartupEventArgs e)
         {
+            System.Console.WriteLine("JJH:  App OnStartup");
             base.OnStartup(e);
 
             var bootstrapper = new MyBootstrapper();
             bootstrapper.Run();
+            System.Console.WriteLine("JJH:  App OnStartup end");
         }
     }
 }

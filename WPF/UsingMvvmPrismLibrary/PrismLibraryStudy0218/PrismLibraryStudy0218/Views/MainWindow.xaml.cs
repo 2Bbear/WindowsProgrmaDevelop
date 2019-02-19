@@ -22,7 +22,9 @@ namespace PrismLibraryStudy0218.Views
     {
         public MainWindow()
         {
+            System.Console.WriteLine("JJH:  MainWindow MainWindow");
             InitializeComponent();
+            System.Console.WriteLine("JJH:  MainWindow MainWindow end");
         }
     }
 }
