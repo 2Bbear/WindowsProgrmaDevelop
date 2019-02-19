@@ -7,6 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <TextBlock Text="View A" FontSize="38" />
+        <TextBlock FontSize="38" ><Run Text="View "/>
+            <Run Text="A"/>
+        </TextBlock>
+        <TextBox Height="23" TextWrapping="Wrap" Text="TextBox" Width="120" Margin="10,59,170,218"/>
     </Grid>
 </UserControl>

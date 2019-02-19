@@ -2,6 +2,7 @@
 using Prism.Regions;
 using System.Windows;
 using Prism.Ioc;
+using System;
 
 namespace ActivationDeactivation.Views
 {
@@ -28,6 +29,7 @@ namespace ActivationDeactivation.Views
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
+            Console.WriteLine("MainWindow_Loaded");
             _viewA = _container.Resolve<ViewA>();
             _viewB = _container.Resolve<ViewB>();
 
