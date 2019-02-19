@@ -13,6 +13,7 @@ namespace ViewDiscovery.Views
             InitializeComponent();
             //view discovery
             regionManager.RegisterViewWithRegion("ContentRegion", typeof(ViewA));
+            regionManager.RegisterViewWithRegion("ContentRegion_Main",typeof(MyView));
         }
     }
 }
