@@ -6,5 +6,6 @@
     <DockPanel LastChildFill="True">
         <Button DockPanel.Dock="Top" Click="Button_Click">Add View</Button>
         <ContentControl prism:RegionManager.RegionName="ContentRegion" />
+        <ContentControl prism:RegionManager.RegionName="PreContentRegionName" />
     </DockPanel>
 </Window>
