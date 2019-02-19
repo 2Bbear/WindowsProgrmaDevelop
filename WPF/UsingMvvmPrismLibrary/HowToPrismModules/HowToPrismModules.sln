@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowToPrismModules", "HowToPrismModules\HowToPrismModules.csproj", "{533F3E57-E383-48D1-902D-9A9A7FFD79CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JJHModule", "JJHModule\JJHModule.csproj", "{B51A1C85-FAAD-4B78-A22E-64E7B6B0DC01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{533F3E57-E383-48D1-902D-9A9A7FFD79CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{533F3E57-E383-48D1-902D-9A9A7FFD79CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{533F3E57-E383-48D1-902D-9A9A7FFD79CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B51A1C85-FAAD-4B78-A22E-64E7B6B0DC01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B51A1C85-FAAD-4B78-A22E-64E7B6B0DC01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B51A1C85-FAAD-4B78-A22E-64E7B6B0DC01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B51A1C85-FAAD-4B78-A22E-64E7B6B0DC01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
