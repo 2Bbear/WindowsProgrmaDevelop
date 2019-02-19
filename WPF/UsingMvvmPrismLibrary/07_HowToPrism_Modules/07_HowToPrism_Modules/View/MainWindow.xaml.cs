@@ -1,4 +1,5 @@
 ﻿using Prism;
+using Prism.Regions;
 using System.Windows;
 
 
@@ -9,7 +10,7 @@ namespace _07_HowToPrism_Modules.View
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow(IRegionManager regionManager)
         {
             InitializeComponent();
         }
