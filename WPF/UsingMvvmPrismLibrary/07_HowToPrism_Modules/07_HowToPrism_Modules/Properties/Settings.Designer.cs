@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Modules.Properties
+namespace _07_HowToPrism_Modules.Properties
 {
 
 
