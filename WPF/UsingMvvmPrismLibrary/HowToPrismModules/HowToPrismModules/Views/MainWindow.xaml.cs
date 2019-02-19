@@ -11,7 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using Prism.Modularity;
 namespace HowToPrismModules.Views
 {
     /// <summary>
@@ -19,9 +19,16 @@ namespace HowToPrismModules.Views
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        IModuleManager _moduleManager;
+        public MainWindow(IModuleManager moduleManager)
         {
             InitializeComponent();
+            _moduleManager = moduleManager;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            _moduleManager.LoadModule("Class1");
         }
     }
 }

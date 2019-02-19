@@ -4,9 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HowToPrismModules.Views"
+        xmlns:prism="http://prismlibrary.com/"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button Click="Button_Click" Content="Button" HorizontalAlignment="Left" Height="96" Margin="248,109,0,0" VerticalAlignment="Top" Width="157"/>
+        <ContentControl prism:RegionManager.RegionName="ContentRegion"/>
     </Grid>
 </Window>

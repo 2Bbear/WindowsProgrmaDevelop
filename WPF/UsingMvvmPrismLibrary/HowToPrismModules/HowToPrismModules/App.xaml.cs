@@ -8,6 +8,8 @@ using System.Windows;
 using Prism.Ioc;
 using Prism.Unity;
 using HowToPrismModules.Views;
+using Prism.Modularity;
+using JJHModule;
 namespace HowToPrismModules
 {
     /// <summary>
@@ -23,6 +25,17 @@ namespace HowToPrismModules
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
            
+        }
+
+        protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
+        {
+            var moduleAType = typeof(Class1);
+            moduleCatalog.AddModule(new ModuleInfo()
+            {
+                ModuleName = moduleAType.Name,
+                ModuleType = moduleAType.AssemblyQualifiedName,
+                InitializationMode = InitializationMode.OnDemand
+            });
         }
     }
 }

@@ -118,5 +118,11 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JJHModule\JJHModule.csproj">
+      <Project>{b51a1c85-faad-4b78-a22e-64e7b6b0dc01}</Project>
+      <Name>JJHModule</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
