@@ -19,6 +19,7 @@ namespace HowToPrismModules
     {
         protected override Window CreateShell()
         {
+            Console.WriteLine("JJH: App CreateShell");
             return Container.Resolve<MainWindow>();
         }
 
