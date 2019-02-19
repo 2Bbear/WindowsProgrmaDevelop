@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _07_Modules.Properties
+namespace Modules.Properties
 {
 
 
