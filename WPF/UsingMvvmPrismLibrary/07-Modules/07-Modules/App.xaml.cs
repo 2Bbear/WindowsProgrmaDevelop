@@ -1,13 +1,13 @@
-﻿using Modules.Views;
+﻿
 using Prism.Modularity;
 using Prism.Unity;
 using Prism.Ioc;
 using System.Windows;
 
-namespace Modules
+namespace _07_Modules
 {
     /// <summary>
-    /// Interaction logic for App.xaml
+    /// App.xaml에 대한 상호 작용 논리
     /// </summary>
     public partial class App : PrismApplication
     {
