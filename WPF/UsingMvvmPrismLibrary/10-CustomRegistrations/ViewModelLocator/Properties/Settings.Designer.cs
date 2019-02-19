@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ChangeConvention.Properties
+namespace ViewModelLocator.Properties
 {
 
 

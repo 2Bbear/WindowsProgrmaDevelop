@@ -1,13 +1,13 @@
 ﻿using System.Windows;
 using Prism.Ioc;
-using Prism.Unity;
-using ChangeConvention.Views;
-namespace ChangeConvention
+using UsingDelegateCommands.Views;
+
+namespace UsingDelegateCommands
 {
     /// <summary>
-    /// App.xaml에 대한 상호 작용 논리
+    /// Interaction logic for App.xaml
     /// </summary>
-    public partial class App : PrismApplication
+    public partial class App
     {
         protected override Window CreateShell()
         {
@@ -16,7 +16,7 @@ namespace ChangeConvention
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-           
+            
         }
     }
 }

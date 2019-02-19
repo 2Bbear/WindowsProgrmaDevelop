@@ -1,9 +1,8 @@
-﻿<prism:PrismApplication x:Class="ChangeConvention.App"
+﻿<prism:PrismApplication x:Class="ViewModelLocator.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:ChangeConvention"
-             xmlns:prism="http://prismlibrary.com/"
-             >
+                        xmlns:prism="http://prismlibrary.com/"
+             xmlns:local="clr-namespace:ViewModelLocator">
     <Application.Resources>
          
     </Application.Resources>
