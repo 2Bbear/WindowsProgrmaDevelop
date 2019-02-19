@@ -1,5 +1,4 @@
 ﻿using System.Windows;
-using Prism;
 using Prism.Ioc;
 using Prism.Unity;
 using ChangeConvention.Views;
