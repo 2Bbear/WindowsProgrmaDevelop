@@ -1,9 +1,10 @@
-﻿<Application x:Class="_07_HowToPrism_Modules.App"
+﻿<prism:PrismApplication x:Class="_07_HowToPrism_Modules.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"
              xmlns:local="clr-namespace:_07_HowToPrism_Modules"
-             StartupUri="MainWindow.xaml">
+            >
     <Application.Resources>
          
     </Application.Resources>
-</Application>
+</prism:PrismApplication>
