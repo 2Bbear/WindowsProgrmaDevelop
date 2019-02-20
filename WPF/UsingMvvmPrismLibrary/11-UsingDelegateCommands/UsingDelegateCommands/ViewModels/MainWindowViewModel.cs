@@ -9,9 +9,12 @@ namespace UsingDelegateCommands.ViewModels
         private bool _isEnabled;
         public bool IsEnabled
         {
-            get { return _isEnabled; }
+            get {
+                //Console.WriteLine("JJH: MainWindowViewModel IsEnabled get");
+                return _isEnabled; }
             set
             {
+                //Console.WriteLine("JJH: MainWindowViewModel IsEnabled set");
                 SetProperty(ref _isEnabled, value);
                 ExecuteDelegateCommand.RaiseCanExecuteChanged();
             }
@@ -20,8 +23,12 @@ namespace UsingDelegateCommands.ViewModels
         private string _updateText;
         public string UpdateText
         {
-            get { return _updateText; }
-            set { SetProperty(ref _updateText, value); }
+            get {
+                //Console.WriteLine("JJH: MainWindowViewModel UpdateText get");
+                return _updateText; }
+            set {
+                //Console.WriteLine("JJH: MainWindowViewModel UpdateText set");
+                SetProperty(ref _updateText, value); }
         }
 
 
@@ -44,6 +51,7 @@ namespace UsingDelegateCommands.ViewModels
             DelegateCommandObservesCanExecute = new DelegateCommand(Execute).ObservesCanExecute(() => IsEnabled);
 
             ExecuteGenericDelegateCommand = new DelegateCommand<string>(ExecuteGeneric).ObservesCanExecute(() => IsEnabled);
+            Console.WriteLine("JJH: MainWindowViewModel MainWindowViewModel end");
         }
 
         private void Execute()
@@ -54,6 +62,7 @@ namespace UsingDelegateCommands.ViewModels
 
         private void ExecuteGeneric(string parameter)
         {
+            parameter = "what?";
             Console.WriteLine("JJH: MainWindowViewModel ExecuteGeneric");
             UpdateText = parameter;
         }
@@ -61,6 +70,8 @@ namespace UsingDelegateCommands.ViewModels
         private bool CanExecute()
         {
             Console.WriteLine("JJH: MainWindowViewModel CanExecute");
+            Console.WriteLine("JJH: MainWindowViewModel CanExecute isEnabled ="+IsEnabled);
+           
             return IsEnabled;
         }
     }
