@@ -10,7 +10,7 @@ namespace SDKSample
 {
     public class ExampleClass:ContentControl
     {
-        
+        public static String test;
         public ExampleClass()
         {
 

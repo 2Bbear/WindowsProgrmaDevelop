@@ -1,6 +1,6 @@
 ﻿using Prism.Mvvm;
 
-namespace Prism_LocalizationExample.ViewModels
+namespace UseLocalizationExention.ViewModels
 {
     public class MainWindowViewModel : BindableBase
     {
@@ -13,7 +13,7 @@ namespace Prism_LocalizationExample.ViewModels
 
         public MainWindowViewModel()
         {
-            
+
         }
     }
 }
