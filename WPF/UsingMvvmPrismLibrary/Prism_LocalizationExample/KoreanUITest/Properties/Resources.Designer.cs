@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace UseLocalizationExention.Properties {
+namespace KoreanUITest.Properties {
     using System;
     
     
@@ -22,7 +22,7 @@ namespace UseLocalizationExention.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Resources {
+    internal class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,10 +36,10 @@ namespace UseLocalizationExention.Properties {
         ///   이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Resources.ResourceManager ResourceManager {
+        internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("UseLocalizationExention.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("KoreanUITest.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -51,7 +51,7 @@ namespace UseLocalizationExention.Properties {
         ///   재정의합니다.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Globalization.CultureInfo Culture {
+        internal static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -61,47 +61,29 @@ namespace UseLocalizationExention.Properties {
         }
         
         /// <summary>
+        ///   tt과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string TITLE {
+            get {
+                return ResourceManager.GetString("TITLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   취소과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
-        public static string BTN_CANSEL {
+        internal static string 취소 {
             get {
-                return ResourceManager.GetString("BTN_CANSEL", resourceCulture);
+                return ResourceManager.GetString("취소", resourceCulture);
             }
         }
         
         /// <summary>
         ///   확인과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
-        public static string BTN_OK {
+        internal static string 확인 {
             get {
-                return ResourceManager.GetString("BTN_OK", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   안녕하세요과(와) 유사한 지역화된 문자열을 찾습니다.
-        /// </summary>
-        public static string Header {
-            get {
-                return ResourceManager.GetString("Header", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   내제목임과(와) 유사한 지역화된 문자열을 찾습니다.
-        /// </summary>
-        public static string MYTITLE {
-            get {
-                return ResourceManager.GetString("MYTITLE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   이건 제목입니다과(와) 유사한 지역화된 문자열을 찾습니다.
-        /// </summary>
-        public static string TITLE {
-            get {
-                return ResourceManager.GetString("TITLE", resourceCulture);
+                return ResourceManager.GetString("확인", resourceCulture);
             }
         }
     }

@@ -118,18 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BTN_CANSEL" xml:space="preserve">
-    <value>취소</value>
+    <value>Annuler</value>
   </data>
   <data name="BTN_OK" xml:space="preserve">
-    <value>확인</value>
+    <value>ok</value>
   </data>
   <data name="Header" xml:space="preserve">
-    <value>안녕하세요</value>
+    <value>Bonjour</value>
   </data>
   <data name="MYTITLE" xml:space="preserve">
-    <value>내제목임</value>
+    <value>ddddd</value>
   </data>
   <data name="TITLE" xml:space="preserve">
-    <value>이건 제목입니다</value>
+    <value>Ceci est le titre</value>
   </data>
 </root>

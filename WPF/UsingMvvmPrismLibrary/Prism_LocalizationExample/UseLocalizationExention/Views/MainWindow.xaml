@@ -4,13 +4,13 @@
         xmlns:prism="http://prismlibrary.com/"
         prism:ViewModelLocator.AutoWireViewModel="True"
 		xmlns:lex="http://wpflocalizeextension.codeplex.com"
-		lex:LocalizeDictionary.DesignCulture="en"
-		lex:LocalizeDictionary.IncludeInvariantCulture="False"
-		lex:ResxLocalizationProvider.DefaultAssembly="UseLocalizationExention"
-		lex:ResxLocalizationProvider.DefaultDictionary="Ressourcen"
+        lex:LocalizeDictionary.DesignCulture="en"
+        lex:LocalizeDictionary.OutputMissingKeys="False"
+        lex:ResxLocalizationProvider.DefaultAssembly="UseLocalizationExention"
+        lex:ResxLocalizationProvider.DefaultDictionary="Properties.Resources"   
         Title="tttt" Height="350" Width="525">
 	<Grid>
-		<TextBox Name="MyLabel" Text="{lex:Loc Mylabel_Text}" HorizontalAlignment="Left" Height="152" Margin="10,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="497"/>
-
-	</Grid>
+		<TextBox Name="MyLabel" Text="{lex:Loc MYTITLE}" HorizontalAlignment="Left" Height="152" Margin="10,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="497"/>
+        <TextBlock Text="{lex:Loc Header}" Margin="10,167,290,69"/>
+    </Grid>
 </Window>
