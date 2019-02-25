@@ -13,7 +13,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using DevExpress.Xpf.Core;
 
-namespace HowToDevExpress0225
+namespace HowToDevExpress0225.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
