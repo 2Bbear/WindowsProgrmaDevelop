@@ -7,7 +7,7 @@
         Title="{Binding Title}" Height="350" Width="525">
     <Grid>
         <ContentControl prism:RegionManager.RegionName="ContentRegion" />
-        <Button Content="{x:Static p:Resources.확인 }" Margin="292,271,123,10"></Button>
+        <Button Content="{x:Static p:Resources.확인}" Margin="292,271,123,10"></Button>
         <Button Content="{x:Static p:Resources.취소 }" Margin="405,271,10,10"></Button>
     </Grid>
 </Window>

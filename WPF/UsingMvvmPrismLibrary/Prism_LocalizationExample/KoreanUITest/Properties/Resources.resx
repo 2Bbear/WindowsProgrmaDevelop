@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="String1" xml:space="preserve">
+    <value>ㅇ</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>ㅇ</value>
+  </data>
   <data name="TITLE" xml:space="preserve">
     <value>tt</value>
   </data>
@@ -125,5 +131,8 @@
   </data>
   <data name="확인" xml:space="preserve">
     <value>확인</value>
+  </data>
+  <data name="확인_버튼" xml:space="preserve">
+    <value>ㅇ</value>
   </data>
 </root>

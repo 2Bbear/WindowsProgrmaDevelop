@@ -61,6 +61,24 @@ namespace KoreanUITest.Properties {
         }
         
         /// <summary>
+        ///   ㅇ과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string String1 {
+            get {
+                return ResourceManager.GetString("String1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ㅇ과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string String2 {
+            get {
+                return ResourceManager.GetString("String2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   tt과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string TITLE {
@@ -84,6 +102,15 @@ namespace KoreanUITest.Properties {
         internal static string 확인 {
             get {
                 return ResourceManager.GetString("확인", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ㅇ과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string 확인_버튼 {
+            get {
+                return ResourceManager.GetString("확인_버튼", resourceCulture);
             }
         }
     }
