@@ -10,7 +10,7 @@
         xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <ContentControl dxmvvm:UIRegion.Region="{x:Static common:Regions.CLMView}">
+        <ContentControl dxmvvm:UIRegion.Region="{x:Static common:Regions.CLMView}" Margin="217,86,0,0">
             
             
         </ContentControl>
