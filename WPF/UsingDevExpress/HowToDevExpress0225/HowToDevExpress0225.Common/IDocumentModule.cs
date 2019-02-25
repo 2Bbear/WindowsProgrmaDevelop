@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace HowToDevExpress0225.Common
 {
-    public  static class Regions
+    public interface IDocumentModule
     {
-        public static string MainWindow { get { return "MainWindow"; } }
-        public static string CLMView { get { return "CLMView"; } }
+        string Caption { get; }
+        bool IsActive { get; set; }
     }
 }

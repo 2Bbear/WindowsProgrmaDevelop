@@ -3,7 +3,21 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
         xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+        xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon"
+        xmlns:dxa="http://schemas.devexpress.com/winfx/2008/xaml/accordion"
+        xmlns:dxdo="http://schemas.devexpress.com/winfx/2008/xaml/docking"
+        xmlns:common="clr-namespace:HowToDevExpress0225.Common;assembly=HowToDevExpress0225.Common"
+        xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
+        <ContentControl dxmvvm:UIRegion.Region="{x:Static common:Regions.CLMView}">
+            
+            
+        </ContentControl>
+
+        <Button Content="Button" HorizontalAlignment="Left" Height="56" Margin="10,253,0,0" VerticalAlignment="Top" Width="132"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="56" Margin="192,253,0,0" VerticalAlignment="Top" Width="132"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="56" Margin="375,253,0,0" VerticalAlignment="Top" Width="132"/>
+
     </Grid>
 </dx:ThemedWindow>

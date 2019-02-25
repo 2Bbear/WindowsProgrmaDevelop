@@ -12,7 +12,8 @@ using AppModules = HowToDevExpress0225.Common.Modules;
 using HowToDevExpress0225.Views;
 using HowToDevExpress0225.ViewModels;
 using System.ComponentModel;
-
+using CLM.Views;
+using CLM.ViewModels;
 namespace HowToDevExpress0225
 {
     /// <summary>
@@ -47,7 +48,7 @@ namespace HowToDevExpress0225
         protected virtual void RegisterModules()
         {
             Manager.Register(Regions.MainWindow, new Module(AppModules.Main, MainWindowViewModel.Create, typeof(MainWindow)));
-            
+            Manager.Register(Regions.CLMView, new Module(AppModules.CLM, CLMViewModel.Create, typeof(CLMView)));
         }
         protected virtual bool RestoreState()
         {
@@ -61,6 +62,7 @@ namespace HowToDevExpress0225
         protected virtual void InjectModules()
         {
             Manager.Inject(Regions.MainWindow, AppModules.Main);
+            Manager.Inject(Regions.CLMView, AppModules.CLM);
      
         }
         protected virtual void ShowMainWindow()

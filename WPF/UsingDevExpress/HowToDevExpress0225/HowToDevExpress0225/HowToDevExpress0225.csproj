@@ -100,6 +100,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\CLM\CLM.csproj">
+      <Project>{ce744ed7-ea3a-42bb-8cd2-16e63c4f2332}</Project>
+      <Name>CLM</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HowToDevExpress0225.Common\HowToDevExpress0225.Common.csproj">
       <Project>{d591cbb0-4748-4331-9d9b-f7372d426054}</Project>
       <Name>HowToDevExpress0225.Common</Name>
