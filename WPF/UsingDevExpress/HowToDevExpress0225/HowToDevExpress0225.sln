@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowToDevExpress0225.Common"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLM", "CLM\CLM.csproj", "{CE744ED7-EA3A-42BB-8CD2-16E63C4F2332}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAM", "SAM\SAM.csproj", "{99C6B855-39E3-42DE-8F0A-9727DB62BF68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{CE744ED7-EA3A-42BB-8CD2-16E63C4F2332}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE744ED7-EA3A-42BB-8CD2-16E63C4F2332}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE744ED7-EA3A-42BB-8CD2-16E63C4F2332}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99C6B855-39E3-42DE-8F0A-9727DB62BF68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99C6B855-39E3-42DE-8F0A-9727DB62BF68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99C6B855-39E3-42DE-8F0A-9727DB62BF68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99C6B855-39E3-42DE-8F0A-9727DB62BF68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D591CBB0-4748-4331-9D9B-F7372D426054} = {EE6EB9B0-FBA7-4121-8219-7BCEEB5539FD}
 		{CE744ED7-EA3A-42BB-8CD2-16E63C4F2332} = {44B81275-9640-4EFA-9C19-9BF725CD77A5}
+		{99C6B855-39E3-42DE-8F0A-9727DB62BF68} = {44B81275-9640-4EFA-9C19-9BF725CD77A5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9FC2243E-2A43-46D1-8297-7BF03FB77ECC}

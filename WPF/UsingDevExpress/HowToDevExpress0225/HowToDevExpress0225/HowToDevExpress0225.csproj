@@ -108,6 +108,10 @@
       <Project>{d591cbb0-4748-4331-9d9b-f7372d426054}</Project>
       <Name>HowToDevExpress0225.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SAM\SAM.csproj">
+      <Project>{99c6b855-39e3-42de-8f0a-9727db62bf68}</Project>
+      <Name>SAM</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

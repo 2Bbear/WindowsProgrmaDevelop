@@ -14,6 +14,10 @@ using HowToDevExpress0225.ViewModels;
 using System.ComponentModel;
 using CLM.Views;
 using CLM.ViewModels;
+
+using SAM.Views;
+using SAM.ViewModels;
+
 namespace HowToDevExpress0225
 {
     /// <summary>
@@ -49,6 +53,8 @@ namespace HowToDevExpress0225
         {
             Manager.Register(Regions.MainWindow, new Module(AppModules.Main, MainWindowViewModel.Create, typeof(MainWindow)));
             Manager.Register(Regions.CLMView, new Module(AppModules.CLM, CLMViewModel.Create, typeof(CLMView)));
+            Manager.Register(Regions.SAMView, new Module(AppModules.SAM, SAMViewModel.Create, typeof(SAMView)));
+            
         }
         protected virtual bool RestoreState()
         {
@@ -63,6 +69,7 @@ namespace HowToDevExpress0225
         {
             Manager.Inject(Regions.MainWindow, AppModules.Main);
             Manager.Inject(Regions.CLMView, AppModules.CLM);
+            Manager.Inject(Regions.SAMView, AppModules.SAM);
      
         }
         protected virtual void ShowMainWindow()

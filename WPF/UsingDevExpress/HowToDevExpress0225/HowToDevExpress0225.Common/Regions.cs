@@ -10,5 +10,6 @@ namespace HowToDevExpress0225.Common
     {
         public static string MainWindow { get { return "MainWindow"; } }
         public static string CLMView { get { return "CLMView"; } }
+        public static string SAMView { get { return "SAMView"; } }
     }
 }
