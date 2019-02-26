@@ -1,0 +1,25 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HowToDevExpress0225.Views"
+        xmlns:common="clr-namespace:HowToDevExpress0225.Common;assembly=HowToDevExpress0225.Common"
+        xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+    x:Class="HowToDevExpress0225.Views.SeparatedWindowView"
+        mc:Ignorable="d"
+        Title="SeparatedWindowView" Height="450" Width="800">
+    <Grid >
+        <ContentControl  dxmvvm:UIRegion.Region="{x:Static common:Regions.RibbonArea}" Margin="0,0,0,306"  Width="792"/>
+        <ContentControl dxmvvm:UIRegion.Region="{x:Static common:Regions.TreeArea}" Margin="0,113,637,0" Width="155" Height="306" >
+
+
+        </ContentControl>
+        <ContentControl dxmvvm:UIRegion.Region="{x:Static common:Regions.TopReportArea}" Margin="155,113,0,157" Width="637">
+
+
+        </ContentControl>
+
+        <ContentControl dxmvvm:UIRegion.Region="{x:Static common:Regions.BottomReportArea}" Margin="155,262,0,0" Height="157" />
+    </Grid>
+</Window>

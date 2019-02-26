@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HowToDevExpress0225.Common
+namespace TopReportArea
 {
-    public interface IDocumentModule
+    interface ITopReportAreaModule
     {
         string Caption { get; }
-        bool IsActive { get; set; }
+        bool IsActive { get; }
     }
 }

@@ -59,6 +59,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModels\SeparatedWindowViewModel.cs" />
+    <Compile Include="Views\SeparatedWindowView.xaml.cs">
+      <DependentUpon>SeparatedWindowView.xaml</DependentUpon>
+    </Compile>
     <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -72,6 +76,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\SeparatedWindowView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -108,9 +116,17 @@
       <Project>{d591cbb0-4748-4331-9d9b-f7372d426054}</Project>
       <Name>HowToDevExpress0225.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RibbonArea\RibbonArea.csproj">
+      <Project>{6d306df8-412d-4602-a4cf-7020e36db8e2}</Project>
+      <Name>RibbonArea</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SAM\SAM.csproj">
       <Project>{99c6b855-39e3-42de-8f0a-9727db62bf68}</Project>
       <Name>SAM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TopReportArea\TopReportArea.csproj">
+      <Project>{242ebf7d-336d-42e2-bf2c-147fe0a69982}</Project>
+      <Name>TopReportArea</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
