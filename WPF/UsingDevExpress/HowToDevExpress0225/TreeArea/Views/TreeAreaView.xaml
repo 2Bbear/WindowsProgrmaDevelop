@@ -1,12 +1,12 @@
-﻿<UserControl x:Class="TopReportArea.Views.TopReportAreaView"
+﻿<UserControl x:Class="TreeArea.Views.TreeAreaView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:TopReportArea.Views"
-             mc:Ignorable="d"
-             Background="YellowGreen"
-            >
+             xmlns:local="clr-namespace:TreeArea.Views"
+             mc:Ignorable="d" 
+             Background="CadetBlue"
+             >
     <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
         <TextBlock  FontSize="50px"  TextWrapping="Wrap" Text="{Binding Caption}" />
 

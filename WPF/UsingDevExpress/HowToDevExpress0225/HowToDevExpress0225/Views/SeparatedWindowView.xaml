@@ -10,16 +10,9 @@
         mc:Ignorable="d"
         Title="SeparatedWindowView" Height="450" Width="800">
     <Grid >
-        <ContentControl  dxmvvm:UIRegion.Region="{x:Static common:Regions.RibbonArea}" Margin="0,0,0,306"  Width="792"/>
-        <ContentControl dxmvvm:UIRegion.Region="{x:Static common:Regions.TreeArea}" Margin="0,113,637,0" Width="155" Height="306" >
-
-
-        </ContentControl>
-        <ContentControl dxmvvm:UIRegion.Region="{x:Static common:Regions.TopReportArea}" Margin="155,113,0,157" Width="637">
-
-
-        </ContentControl>
-
-        <ContentControl dxmvvm:UIRegion.Region="{x:Static common:Regions.BottomReportArea}" Margin="155,262,0,0" Height="157" />
+        <ContentControl dxmvvm:UIRegion.Region="{x:Static common:Regions.RibbonArea}" Margin="0,0,0,306"  />
+        <ContentControl dxmvvm:UIRegion.Region="{x:Static common:Regions.TreeArea}" Margin="0,113,637,0" />
+        <ContentControl dxmvvm:UIRegion.Region="{x:Static common:Regions.TopReportArea}" Margin="155,113,0,157" />
+        <ContentControl dxmvvm:UIRegion.Region="{x:Static common:Regions.BottomReportArea}" Margin="155,262,0,0"  />
     </Grid>
 </Window>

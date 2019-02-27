@@ -108,6 +108,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\BottomArea\BottomArea.csproj">
+      <Project>{8f5c1f0e-a7dd-4ac6-a7c0-2ad2e0f9b0a8}</Project>
+      <Name>BottomArea</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CLM\CLM.csproj">
       <Project>{ce744ed7-ea3a-42bb-8cd2-16e63c4f2332}</Project>
       <Name>CLM</Name>
@@ -127,6 +131,10 @@
     <ProjectReference Include="..\TopReportArea\TopReportArea.csproj">
       <Project>{242ebf7d-336d-42e2-bf2c-147fe0a69982}</Project>
       <Name>TopReportArea</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TreeArea\TreeArea.csproj">
+      <Project>{5ea81cd2-e14e-4567-b264-00a2a8eb14dd}</Project>
+      <Name>TreeArea</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

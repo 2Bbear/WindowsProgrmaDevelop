@@ -56,35 +56,13 @@ namespace HowToDevExpress0225
             if (!RestoreState())
                 InjectModules();
 
-            ConfigureRibbonModule();
+            //ConfigureRibbonModule();
             ShowMainWindow();
         }
-        protected virtual void ConfigureTypeLocators()
-        {
-            var mainAssembly = typeof(MainWindowViewModel).Assembly;
-            var modulesAssembly = typeof(MainWindowViewModel).Assembly;
-            var assemblies = new[] { mainAssembly, modulesAssembly };
-            ViewModelLocator.Default = new ViewModelLocator(assemblies);
-            ViewLocator.Default = new ViewLocator(assemblies);
-        }
+       
         protected IModuleManager Manager { get { return ModuleManager.DefaultManager; } }
         //
-        protected virtual void ConfigureRibbonModule()
-        {
-            Manager.GetEvents(Regions.RibbonArea).Navigation += OnNavigation;
-            
-           
-        }
-        void OnNavigation(object sender, NavigationEventArgs e)
-        {
-            if (e.NewViewModelKey == null) return;
-            if (e.NewViewModelKey == "Ribbon") return;
-            Manager.InjectOrNavigate(Regions.TopReportArea, e.NewViewModelKey);// e.NewViewModelKey
-        }
-        void OnDocumentsNavigation(object sender, NavigationEventArgs e)
-        {
-           
-        }
+    
         //
        
        
@@ -101,12 +79,17 @@ namespace HowToDevExpress0225
             Manager.Register(Regions.RibbonArea, new Module(AppModules.Ribbon, RibbonAreaViewModel.Create, typeof(RibbonAreaView_Blue)));
 
             //TreeArea
-
+            Manager.Register(Regions.TreeArea, new Module(AppModules.Report1, () => TreeArea.ViewModels.TreeAreaViewModel.Create("TestTree1", "TestTop1 Content"), typeof(TreeArea.Views.TreeAreaView)));
+            Manager.Register(Regions.TreeArea, new Module(AppModules.Report2, () => TreeArea.ViewModels.TreeAreaViewModel.Create("TestTree2", "TestTop2 Content"), typeof(TreeArea.Views.TreeAreaView)));
+           
             //TopReportArea
-               
             Manager.Register(Regions.TopReportArea, new Module(AppModules.Report1, () => TopReportAreaViewModel.Create("TestTop1", "TestTop1 Content"), typeof(TopReportAreaView)));
             Manager.Register(Regions.TopReportArea, new Module(AppModules.Report2, () => TopReportAreaViewModel.Create("TestTop2", "TestTop2 Content"), typeof(TopReportAreaView)));
+
             //BottomReportArea
+            Manager.Register(Regions.BottomReportArea, new Module(AppModules.Report1, () => BottomArea.ViewModels.BottomAreaViewModel.Create("TestTree1", "TestTop1 Content"), typeof(BottomArea.Views.BottomAreaView)));
+            Manager.Register(Regions.BottomReportArea, new Module(AppModules.Report2, () => BottomArea.ViewModels.BottomAreaViewModel.Create("TestTree2", "TestTop2 Content"), typeof(BottomArea.Views.BottomAreaView)));
+
             //=======================================================================
 
         }
@@ -129,7 +112,6 @@ namespace HowToDevExpress0225
             Manager.Inject(Regions.RibbonArea, AppModules.Ribbon);
            
             //===========================================================
-     
         }
         //시작 윈도우 설정
         protected virtual void ShowMainWindow()

@@ -28,6 +28,8 @@ namespace RibbonArea.ViewModels
         {
             currentReport = HowToDevExpress0225.Common.Modules.Report1;
             ModuleManager.DefaultManager.InjectOrNavigate(Regions.TopReportArea, Modules.Report1);
+            ModuleManager.DefaultManager.InjectOrNavigate(Regions.TreeArea, Modules.Report1);
+            ModuleManager.DefaultManager.InjectOrNavigate(Regions.BottomReportArea, Modules.Report1);
         }
         public bool CanReport1()
         {
@@ -38,6 +40,8 @@ namespace RibbonArea.ViewModels
         {
             currentReport = HowToDevExpress0225.Common.Modules.Report2;
             ModuleManager.DefaultManager.InjectOrNavigate(Regions.TopReportArea, Modules.Report2);
+            ModuleManager.DefaultManager.InjectOrNavigate(Regions.TreeArea, Modules.Report2);
+            ModuleManager.DefaultManager.InjectOrNavigate(Regions.BottomReportArea, Modules.Report2);
         }
         public bool CanReport2()
         {
