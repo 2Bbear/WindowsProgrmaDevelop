@@ -50,7 +50,7 @@ namespace HowToDevExpress0225
 
         public virtual void Run()
         {
-            ConfigureTypeLocators();
+            //ConfigureTypeLocators();
             RegisterModules();
 
             if (!RestoreState())
@@ -72,6 +72,7 @@ namespace HowToDevExpress0225
         protected virtual void ConfigureRibbonModule()
         {
             Manager.GetEvents(Regions.RibbonArea).Navigation += OnNavigation;
+            
            
         }
         void OnNavigation(object sender, NavigationEventArgs e)
@@ -97,7 +98,7 @@ namespace HowToDevExpress0225
             //Resion================================================================
 
             //RibbonArea
-            Manager.Register(Regions.RibbonArea, new Module(AppModules.Ribbon, RibbonAreaViewModel.Create, typeof(RibbonAreaView)));
+            Manager.Register(Regions.RibbonArea, new Module(AppModules.Ribbon, RibbonAreaViewModel.Create, typeof(RibbonAreaView_Blue)));
 
             //TreeArea
 

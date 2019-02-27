@@ -6,9 +6,10 @@
              xmlns:local="clr-namespace:TopReportArea.Views"
              mc:Ignorable="d"
              Background="YellowGreen"
+           
             >
     <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
-        <TextBlock  FontSize="50px"  TextWrapping="Wrap" Text="TopReportAreaView TextBlock" />
+        <TextBlock  FontSize="50px"  TextWrapping="Wrap" Text="{Binding Caption}" />
 
     </Grid>
 </UserControl>

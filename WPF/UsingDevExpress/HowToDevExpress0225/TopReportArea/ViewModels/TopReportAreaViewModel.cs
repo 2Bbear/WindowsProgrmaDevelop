@@ -5,7 +5,7 @@ using System;
 
 namespace TopReportArea.ViewModels
 {
-    public class TopReportAreaViewModel : ITopReportAreaModule, ISupportState<TopReportAreaViewModel.Info>
+    public class TopReportAreaViewModel :BindableBase, ITopReportAreaModule, ISupportState<TopReportAreaViewModel.Info>
     {
         public virtual string Caption { get; set; }
         public virtual bool IsActive { get; set; }

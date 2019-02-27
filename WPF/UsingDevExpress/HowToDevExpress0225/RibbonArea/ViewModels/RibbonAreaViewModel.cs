@@ -1,11 +1,8 @@
 ﻿using DevExpress.Mvvm;
 using DevExpress.Mvvm.POCO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
+using DevExpress.Mvvm.ModuleInjection;
 using System.Windows.Input;
-
+using HowToDevExpress0225.Common;
 namespace RibbonArea.ViewModels
 {
   
@@ -30,7 +27,7 @@ namespace RibbonArea.ViewModels
         public void Report1()
         {
             currentReport = HowToDevExpress0225.Common.Modules.Report1;
-            
+            ModuleManager.DefaultManager.InjectOrNavigate(Regions.TopReportArea, Modules.Report1);
         }
         public bool CanReport1()
         {
@@ -40,6 +37,7 @@ namespace RibbonArea.ViewModels
         public void Report2()
         {
             currentReport = HowToDevExpress0225.Common.Modules.Report2;
+            ModuleManager.DefaultManager.InjectOrNavigate(Regions.TopReportArea, Modules.Report2);
         }
         public bool CanReport2()
         {

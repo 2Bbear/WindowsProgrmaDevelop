@@ -8,8 +8,8 @@
              Background="DodgerBlue"
             >
     <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="76"/>
-        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="76" Margin="102,0,0,0"/>
+        <Button Command="{Binding Report1Command}" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="76"/>
+        <Button Command="{Binding Report2Command}" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="76" Margin="102,0,0,0"/>
         <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="76" Margin="197,0,0,0"/>
 
     </Grid>
