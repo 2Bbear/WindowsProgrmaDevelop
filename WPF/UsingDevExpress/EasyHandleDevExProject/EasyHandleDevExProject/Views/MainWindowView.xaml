@@ -4,15 +4,32 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EasyHandleDevExProject.Views"
+        xmlns:config="clr-namespace:EasyHandleDevExProject.Config;assembly=EasyHandleDevExProject.Config"
+        xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
         mc:Ignorable="d"
         Title="MainWindowView" Height="768" Width="1360">
-    <Grid>
-        <Grid Background="GreenYellow" Margin="0,0,0,608" Height="130"></Grid>
-        <Grid Background="Orange" Margin="0,129,1103,0" Width="250"/>
-        <Grid Margin="250,130,0,0" HorizontalAlignment="Left" Width="1102" Height="608" VerticalAlignment="Top">
-            <Grid Background="DarkTurquoise" Margin="0,0,0,309"/>
-            <Grid Background="DeepSkyBlue" Margin="0,299,0,0" />
 
+    <Grid  ShowGridLines="False" HorizontalAlignment="Left" Width="1352">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="113*"></ColumnDefinition>
+            <ColumnDefinition Width="563*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="49*"></RowDefinition>
+            <RowDefinition Height="154*"></RowDefinition>
+            <RowDefinition Height="252*"></RowDefinition>
+            <RowDefinition Height="282*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.ColumnSpan="2" Grid.Row="0">
+            <Button Content="Button" HorizontalAlignment="Left" Margin="435,10,0,0" VerticalAlignment="Top" Width="75"/>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="536,10,0,0" VerticalAlignment="Top" Width="75"/>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="639,10,0,0" VerticalAlignment="Top" Width="75"/>
         </Grid>
+        <Grid dxmvvm:UIRegion.Region="{x:Static config:Regions.RibbonRegion}" Background="Aqua" Grid.ColumnSpan="2" Grid.Row="1"></Grid>
+
+        <Grid dxmvvm:UIRegion.Region="{x:Static config:Regions.TreeRegion}" Background="DarkCyan" Grid.Column="0" Grid.Row="2" Grid.RowSpan="2"></Grid>
+
+        <Grid dxmvvm:UIRegion.Region="{x:Static config:Regions.TopReportRegion}" Background="Bisque" Grid.Column="1" Grid.Row="2" ></Grid>
+        <Grid dxmvvm:UIRegion.Region="{x:Static config:Regions.BottomReportRegion}" Background="DeepSkyBlue" Grid.Column="1" Grid.Row="3" ></Grid>
     </Grid>
 </Window>

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EasyHandleDevExProject.Config.Config
+namespace EasyHandleDevExProject.Config
 {
     class Modules
     {

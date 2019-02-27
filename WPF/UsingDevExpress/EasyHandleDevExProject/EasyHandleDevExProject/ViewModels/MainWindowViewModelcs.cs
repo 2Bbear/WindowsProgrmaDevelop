@@ -8,5 +8,6 @@ namespace EasyHandleDevExProject.ViewModels
 {
     public class MainWindowViewModelcs
     {
+        
     }
 }
