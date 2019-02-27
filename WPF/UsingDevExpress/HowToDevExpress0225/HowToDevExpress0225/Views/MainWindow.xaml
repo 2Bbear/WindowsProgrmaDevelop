@@ -9,7 +9,7 @@
         xmlns:common="clr-namespace:HowToDevExpress0225.Common;assembly=HowToDevExpress0225.Common"
         xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
+    <Grid >
         <ContentControl dxmvvm:UIRegion.Region="{x:Static common:Regions.SAMView}" Margin="0,0,0,106">
             
             
