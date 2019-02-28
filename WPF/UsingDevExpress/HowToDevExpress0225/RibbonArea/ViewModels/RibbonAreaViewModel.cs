@@ -3,6 +3,7 @@ using DevExpress.Mvvm.POCO;
 using DevExpress.Mvvm.ModuleInjection;
 using System.Windows.Input;
 using HowToDevExpress0225.Common;
+
 namespace RibbonArea.ViewModels
 {
   

@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
+﻿
 using System.Windows;
 using DevExpress.Mvvm.ModuleInjection;
 
-using DevExpress.Xpf.Core;
+
 
 using HowToDevExpress0225.Common;
 using AppModules = HowToDevExpress0225.Common.Modules;
 using HowToDevExpress0225.Views;
-using HowToDevExpress0225.ViewModels;
+
 using System.ComponentModel;
 using CLM.Views;
 using CLM.ViewModels;
@@ -24,8 +20,7 @@ using RibbonArea.ViewModels;
 
 using TopReportArea.Views;
 using TopReportArea.ViewModels;
-using DevExpress.Mvvm;
-using DevExpress.Mvvm.UI;
+
 
 namespace HowToDevExpress0225
 {
@@ -80,7 +75,7 @@ namespace HowToDevExpress0225
 
             //TreeArea
             Manager.Register(Regions.TreeArea, new Module(AppModules.Report1, () => TreeArea.ViewModels.TreeAreaViewModel.Create("TestTree1", "TestTop1 Content"), typeof(TreeArea.Views.TreeAreaView)));
-            Manager.Register(Regions.TreeArea, new Module(AppModules.Report2, () => TreeArea.ViewModels.TreeAreaViewModel.Create("TestTree2", "TestTop2 Content"), typeof(TreeArea.Views.TreeAreaView)));
+            Manager.Register(Regions.TreeArea, new Module(AppModules.Report2, () => TreeArea.ViewModels.TreeAreaViewModel.Create("TestTree2ddddddddddddddddddd", "TestTop2 Content"), typeof(TreeArea.Views.TreeAreaView)));
            
             //TopReportArea
             Manager.Register(Regions.TopReportArea, new Module(AppModules.Report1, () => TopReportAreaViewModel.Create("TestTop1", "TestTop1 Content"), typeof(TopReportAreaView)));

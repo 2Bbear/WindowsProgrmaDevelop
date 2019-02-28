@@ -103,9 +103,25 @@
     <Folder Include="Model\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CLM\CLM.csproj">
+      <Project>{a55f6bdc-7421-4d37-ac86-e824a1ad771b}</Project>
+      <Name>CLM</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EasyHandleDevExProject.Config\EasyHandleDevExProject.Config.csproj">
       <Project>{5f46b762-373a-40d2-916d-f9245d3377f5}</Project>
       <Name>EasyHandleDevExProject.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAM\SAM.csproj">
+      <Project>{6a033419-79da-4caa-a87f-1b925219304e}</Project>
+      <Name>SAM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SET\SET.csproj">
+      <Project>{37118437-8231-4ea5-89a3-9ce0fdedca10}</Project>
+      <Name>SET</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TEST\TEST.csproj">
+      <Project>{b95aef3d-3ad4-43ce-ad79-a7375b006814}</Project>
+      <Name>TEST</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

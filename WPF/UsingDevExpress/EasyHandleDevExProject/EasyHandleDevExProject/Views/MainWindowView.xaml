@@ -9,7 +9,7 @@
         mc:Ignorable="d"
         Title="MainWindowView" Height="768" Width="1360">
 
-    <Grid  ShowGridLines="False" HorizontalAlignment="Left" Width="1352">
+    <Grid  ShowGridLines="False">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="113*"></ColumnDefinition>
             <ColumnDefinition Width="563*"></ColumnDefinition>
@@ -20,16 +20,23 @@
             <RowDefinition Height="252*"></RowDefinition>
             <RowDefinition Height="282*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid Grid.ColumnSpan="2" Grid.Row="0">
-            <Button Content="Button" HorizontalAlignment="Left" Margin="435,10,0,0" VerticalAlignment="Top" Width="75"/>
-            <Button Content="Button" HorizontalAlignment="Left" Margin="536,10,0,0" VerticalAlignment="Top" Width="75"/>
-            <Button Content="Button" HorizontalAlignment="Left" Margin="639,10,0,0" VerticalAlignment="Top" Width="75"/>
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center" dxmvvm:UIRegion.Region="{x:Static config:Regions.TestRegion}"  Grid.ColumnSpan="2" Grid.Row="0">
+            
         </Grid>
-        <Grid dxmvvm:UIRegion.Region="{x:Static config:Regions.RibbonRegion}" Background="Aqua" Grid.ColumnSpan="2" Grid.Row="1"></Grid>
+        <ContentControl  dxmvvm:UIRegion.Region="{x:Static config:Regions.RibbonRegion}" Background="Aqua" Grid.ColumnSpan="2" Grid.Row="1"></ContentControl>
 
-        <Grid dxmvvm:UIRegion.Region="{x:Static config:Regions.TreeRegion}" Background="DarkCyan" Grid.Column="0" Grid.Row="2" Grid.RowSpan="2"></Grid>
+        <ContentControl dxmvvm:UIRegion.Region="{x:Static config:Regions.TreeRegion}" Background="DarkCyan" Grid.Column="0" Grid.Row="2" Grid.RowSpan="2"></ContentControl>
 
-        <Grid dxmvvm:UIRegion.Region="{x:Static config:Regions.TopReportRegion}" Background="Bisque" Grid.Column="1" Grid.Row="2" ></Grid>
-        <Grid dxmvvm:UIRegion.Region="{x:Static config:Regions.BottomReportRegion}" Background="DeepSkyBlue" Grid.Column="1" Grid.Row="3" ></Grid>
+        <Grid  Grid.Column="1" Grid.Row="2" Grid.RowSpan="2" >
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <ContentControl dxmvvm:UIRegion.Region="{x:Static config:Regions.TopReportRegion}" Grid.Row="0"  Background="Bisque"  ></ContentControl>
+            <ContentControl dxmvvm:UIRegion.Region="{x:Static config:Regions.BottomReportRegion}" Grid.Row="1"  Background="DeepSkyBlue"  ></ContentControl>
+        
+        </Grid>
+        
     </Grid>
 </Window>
