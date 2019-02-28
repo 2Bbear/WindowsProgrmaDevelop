@@ -21,20 +21,29 @@
             <RowDefinition Height="282*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid HorizontalAlignment="Center" VerticalAlignment="Center" dxmvvm:UIRegion.Region="{x:Static config:Regions.TestRegion}"  Grid.ColumnSpan="2" Grid.Row="0">
-            
-        </Grid>
-        <ContentControl  dxmvvm:UIRegion.Region="{x:Static config:Regions.RibbonRegion}" Background="Aqua" Grid.ColumnSpan="2" Grid.Row="1"></ContentControl>
 
-        <ContentControl dxmvvm:UIRegion.Region="{x:Static config:Regions.TreeRegion}" Background="DarkCyan" Grid.Column="0" Grid.Row="2" Grid.RowSpan="2"></ContentControl>
+        </Grid>
+        <Grid  Background="Aqua" Grid.ColumnSpan="2" Grid.Row="1">
+            <ContentControl  dxmvvm:UIRegion.Region="{x:Static config:Regions.RibbonRegion}"></ContentControl>
+        </Grid>
+
+        <Grid Background="DarkCyan" Grid.Column="0" Grid.Row="2" Grid.RowSpan="2">
+            <ContentControl dxmvvm:UIRegion.Region="{x:Static config:Regions.TreeRegion}" ></ContentControl>
+        </Grid>
+        
 
         <Grid  Grid.Column="1" Grid.Row="2" Grid.RowSpan="2" >
             <Grid.RowDefinitions>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
-
-            <ContentControl dxmvvm:UIRegion.Region="{x:Static config:Regions.TopReportRegion}" Grid.Row="0"  Background="Bisque"  ></ContentControl>
-            <ContentControl dxmvvm:UIRegion.Region="{x:Static config:Regions.BottomReportRegion}" Grid.Row="1"  Background="DeepSkyBlue"  ></ContentControl>
+            <Grid Grid.Row="0"  Background="Bisque" >
+                <ContentControl dxmvvm:UIRegion.Region="{x:Static config:Regions.TopReportRegion}"  ></ContentControl>
+            </Grid>
+            <Grid Grid.Row="1"  Background="DeepSkyBlue">
+                <ContentControl dxmvvm:UIRegion.Region="{x:Static config:Regions.BottomReportRegion}"   ></ContentControl>
+            </Grid>
+            
         
         </Grid>
         

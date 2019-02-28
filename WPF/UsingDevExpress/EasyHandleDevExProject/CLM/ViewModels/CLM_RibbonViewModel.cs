@@ -1,14 +1,18 @@
 ﻿using DevExpress.Mvvm;
 using DevExpress.Mvvm.POCO;
-
+using System.Collections.Generic;
 
 namespace CLM.ViewModels
 {
     public class CLM_RibbonViewModel :BindableBase
     {
+   
+
         public string Caption { get; set; }
         public virtual bool IsActive { get; set; }
         public virtual string Content { get; set; }
+       
+
         public static CLM_RibbonViewModel Create()
         {
             return ViewModelSource.Create(() => new CLM_RibbonViewModel()
@@ -27,9 +31,13 @@ namespace CLM.ViewModels
         }
         protected CLM_RibbonViewModel()
         {
+     
+
 
         }
-     
+
+       
+        
 
 
     }

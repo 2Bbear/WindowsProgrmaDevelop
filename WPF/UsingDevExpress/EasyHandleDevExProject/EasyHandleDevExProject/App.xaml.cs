@@ -47,7 +47,7 @@ namespace EasyHandleDevExProject
             Manager.Register(Regions.TestRegion, new Module(AppModules.TESTModule, TEST.ViewModels.TEST_ButtonViewModel.Create, typeof(TEST.Views.TEST_ButtonView)));
 
             //Ribbon
-            Manager.Register(Regions.RibbonRegion, new Module(AppModules.CLMModule, () => CLM.ViewModels.CLM_RibbonViewModel.Create("dddd"), typeof(CLM.Views.CLM_RibbonView)));
+            Manager.Register(Regions.RibbonRegion, new Module(AppModules.CLMModule, () => CLM.ViewModels.CLM_RibbonViewModel.Create("구매관리"), typeof(CLM.Views.CLM_RibbonView)));
             Manager.Register(Regions.RibbonRegion, new Module(AppModules.CLMModule2, () => CLM.ViewModels.CLM_RibbonViewModel.Create("바낌"), typeof(CLM.Views.CLM_RibbonView)));
 
             Manager.Register(Regions.RibbonRegion, new Module(AppModules.SAMModule, SAM.ViewModels.SAM_RibbonViewModel.Create, typeof(SAM.Views.SAM_RibbonView)));
