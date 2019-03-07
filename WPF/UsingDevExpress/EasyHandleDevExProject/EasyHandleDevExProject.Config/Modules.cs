@@ -14,5 +14,7 @@ namespace EasyHandleDevExProject.Config
 
         public static string SAMModule { get { return "SAMModule"; } }
         public static string SETModule { get { return "SETModule"; } }
+
+       
     }
 }

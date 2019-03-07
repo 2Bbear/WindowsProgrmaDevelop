@@ -1,0 +1,34 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:MakeStyleTemplate.Style">
+
+    <LinearGradientBrush x:Key="GrayBlueGradientBrush"   
+    StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Color="DarkGray" Offset="0" />
+        <GradientStop Color="#CCCCFF" Offset="0.5" />
+        <GradientStop Color="DarkGray" Offset="1" />
+    </LinearGradientBrush>
+    <Style x:Key="roundbutton" TargetType="{x:Type Button}">
+        <Setter Property="Background" Value="{StaticResource GrayBlueGradientBrush}" />
+        <Setter Property="Width" Value="80" />
+        <Setter Property="Margin" Value="10" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" ClipToBounds="True">
+                        <!-- Outer Rectangle with rounded corners. -->
+                        <Rectangle x:Name="outerRectangle" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stroke="{TemplateBinding Background}" RadiusX="20" RadiusY="20" StrokeThickness="5" Fill="Transparent" />
+                        <!-- Inner Rectangle with rounded corners. -->
+                        <Rectangle x:Name="innerRectangle" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stroke="Transparent" StrokeThickness="20" Fill="{TemplateBinding Background}" RadiusX="20" RadiusY="20" />
+                        <!-- Present Content (text) of the button. -->
+                        <DockPanel Name="myContentPresenterDockPanel">
+                            <ContentPresenter x:Name="myContentPresenter" Margin="20" Content="{TemplateBinding  Content}" TextBlock.Foreground="Black" />
+                        </DockPanel>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+</ResourceDictionary>
