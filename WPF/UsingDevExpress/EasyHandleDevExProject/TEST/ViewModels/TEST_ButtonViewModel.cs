@@ -12,7 +12,8 @@ namespace TEST.ViewModels
     public class TEST_ButtonViewModel:ViewModelBase
     {
         public List<string> ComboBoxData { get; set; }//콤보박스 데이터용
-        public string SelectedValue { get; set; } // 콤보박스 데이터용
+        //public string SelectedValue { get; set; } // 콤보박스 데이터용
+        public int SelectedIndex { get; set; }//콤보박스 데이터용
 
         public DataController dataController; //Model에서 메소드를 불러오기 위한 객체
 
@@ -34,7 +35,7 @@ namespace TEST.ViewModels
         private void InitControll()
         {
             ComboBoxData = dataController.getManagerList();
-            
+            SelectedIndex = 1;
         }
         //이벤트 처리용 딜리게이트를 처리하는 메소드
         private void DelegateProcess()
